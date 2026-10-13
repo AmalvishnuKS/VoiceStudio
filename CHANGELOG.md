@@ -8,7 +8,30 @@ metadata and the backend fallback mirror it.
 
 ## [Unreleased]
 
-## [0.5.7] — 2026-10-13
+**Highlights**
+
+- Add model-source notices and an optional exact-file review preview; ordinary downloads remain unchanged. (#2689)
+- Model cards show a coloured icon for each model's licence category: commercial, with conditions, personal/research only, or unknown. (#2689)
+- Models without a plainly commercial licence, including the default OmniVoice model, must have their licence accepted once before use; VoiceStudio is not the licensor and cannot grant model rights. (#2689)
+- The model licence dialog is clearer: a plain summary, what the licence allows, and collapsible details; acceptance records the date and exact terms, and changed terms ask again. (#2689)
+
+### Changed
+
+- App identity and backend, browser and Electron development ports now come from one validated configuration file. (#2759)
+- Keep synthesis controls anchored at the bottom when the latest take appears. (#2759)
+- Using a Gallery design voice opens its workspace immediately and defers model loading until audio is requested. (#2759)
+- Existing local projects, settings and data are unaffected; legacy worker database records are retained and ignored.
+
+### Fixed
+
+- First-run setup installs into the runtime folder you choose even when that folder already exists but is empty, such as one just created in the folder picker. (#2766) — thanks @emreisik95!
+
+### Removed
+
+- Remove licence activation from the open-source Pro page. (#2762)
+- Remote compute devices, remote workers and GPU sharing moved to VoiceStudio Pro and are no longer included in the open-source app.
+
+## [0.5.7] — 2026-10-07
 
 **VoiceStudio now runs on PCs without a GPU and recovers instead of giving up.** Voice cloning uses the speech-to-text model you installed from Model Catalogue, GPU-less computers get the small CPU PyTorch build, and slow or busy backends are no longer reported as failed.
 
