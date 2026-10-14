@@ -11,10 +11,15 @@ metadata and the backend fallback mirror it.
 **Highlights**
 
 - The open-source app no longer contains a licence-key client
+- Saved environment changes replace duplicate and hand-written assignments so the chosen setting, including Unicode line separators in folder names, survives restart. (#2711) — thanks @rudycelekli!
 
 ### Removed
 
 - The unused licence-key client and its Lemon Squeezy network call are gone from the open-source app (#2812)
+
+### Fixed
+
+- Saved environment changes replace duplicate and hand-written assignments so the chosen setting survives restart. (#2711) — thanks @rudycelekli!
 
 ## [0.5.7] — 2026-10-13
 
