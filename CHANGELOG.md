@@ -11,10 +11,15 @@ metadata and the backend fallback mirror it.
 **Highlights**
 
 - The open-source app no longer contains a licence-key client
+- Public API URLs are validated without logging rejected credentials, and international hostnames work with the served web interface. (#2704) — thanks @rudycelekli!
 
 ### Removed
 
 - The unused licence-key client and its Lemon Squeezy network call are gone from the open-source app (#2812)
+
+### Fixed
+
+- Public API URLs are validated and international hostnames work with the served web interface. (#2704) — thanks @rudycelekli!
 
 ## [0.5.7] — 2026-10-13
 
