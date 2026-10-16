@@ -34,6 +34,7 @@ metadata and the backend fallback mirror it.
 - Snap packages follow Canonical’s strict-confinement approach to launch without manual Chromium sandbox setup (#2893) — thanks @velixio!
 - Snap launches explain missing sandbox permissions instead of crashing before startup (#2889)
 - Snap packages expand the Electron desktop runtime so they launch after installation (#2858)
+- `bun run start` and `bun run desktop-prod` open a fresh checkout, and source launches started from VS Code no longer crash on startup (#2923)
 
 ## [0.5.7] — 2026-10-13
 
